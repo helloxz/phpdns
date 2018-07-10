@@ -1,6 +1,10 @@
 # PHPDNS
 PHPDNS是基于DNSmasq开发的WEB界面
 
+![](https://imgurl.org/upload/1807/7bb91bcc8bd6d328.png)
+
+![](https://imgurl.org/upload/1807/1fc3a392274aaaf3.png)
+
 ### 环境要求
 * CentOS 6/7
 * PHP 5.6+(需要支持PDO组件)
