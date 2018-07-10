@@ -1,0 +1,57 @@
+.menu{
+    width:100%;
+    background-color: #393D49;
+}
+.menu h1{
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+.leftmenu{
+    float: left;
+}
+.menu a{
+    color: rgba(255,255,255,.7);
+}
+.rightmenu{
+    float: right;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #2F4056;
+    padding-top:1em;
+    padding-bottom: 1em;
+    color:rgba(255,255,255,.7);
+}
+.footer a{
+    color: #FFFFFF;
+}
+#login{
+    margin-top:6em;
+}
+#login div{
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+.serverip code{
+    background-color: #F0F0F0;
+    color: #C13;
+}
+.page{
+    margin-top:3em;
+}
+.page strong{
+    margin-right:0.6em;
+}
+.page a{
+    border:1px solid #e2e2e2;
+    padding: 0.6em;
+    margin-right:0.6em;
+}
+.server a{
+    color:#01AAED;
+}
+.use{
+    margin-top:3em;
+}
