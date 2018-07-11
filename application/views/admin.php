@@ -4,8 +4,8 @@
             <span class="layui-breadcrumb" lay-separator="|">
                 <a href="/admin/addhost">hosts（添加）</a>
                 <a href="/admin/addad">adsense（添加）</a>
-                <a href="/admin/list/hosts">hosts列表</a>
-                <a href="/admin/list/adblock">adsense列表</a>
+                <a href="/admin/list/hosts/0">hosts列表</a>
+                <a href="/admin/list/adblock/0">adsense列表</a>
                 
             </span>
             </div>
