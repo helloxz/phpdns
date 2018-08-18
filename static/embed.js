@@ -46,6 +46,18 @@ function addad(){
     });
 }
 
+//更新数据
+function uphost(type,id){
+	domain = $("#domain").val();
+    note = $("#note").val();
+    ip = $("#ip").val();
+
+    $.post("/deal/uphost/" + type + '/' + id,{ip:ip,domain:domain,note:note},function(data,status){
+        layer.msg(data);
+        setTimeout("window.history.back(-1)", 3000);
+    });
+}
+
 //删除指定数据
 function delate(id,type){
     layer.confirm('确认删除？', {icon: 3, title:'温馨提示！'}, function(index){

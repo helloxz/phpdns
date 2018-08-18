@@ -45,7 +45,10 @@
         <td><a href="javascript:;" onclick = "queryip('<?php echo $value->ip; ?>')"><?php echo $value->ip; ?></a></td>
         <td><?php echo $value->time; ?></td>
         <td><a href="javascript:;" class="layui-btn layui-btn-xs" onclick = "viewnote('<?php echo $value->id; ?>','<?php echo $type; ?>')">查看备注</a></td>
-        <td><a href="javascript:;" class="layui-btn layui-btn-xs layui-btn-danger" onclick = "delate('<?php echo $value->id; ?>','<?php echo $type; ?>')">删除</a></td>
+        <td>
+	        <a href="/admin/edit/<?php echo $type; ?>/<?php echo $value->id; ?>" class="layui-btn layui-btn-xs">编辑</a>
+	        <a href="javascript:;" class="layui-btn layui-btn-xs layui-btn-danger" onclick = "delate('<?php echo $value->id; ?>','<?php echo $type; ?>')">删除</a>
+        </td>
         </tr>
     <?php } ?>
     </tbody>

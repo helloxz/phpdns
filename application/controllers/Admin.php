@@ -48,7 +48,7 @@
             check_host("dsds.sdsd.com4");
         }
         //列出所有记录
-        public function list($type,$page){
+        public function list($type,$page = 0){
             
             @$page = (int)$page;
             if((!isset($page)) || ($page == '')) {
@@ -150,6 +150,26 @@
             $this->load->view('header',$data);
             $this->load->view('leftmenu');
             $this->load->view('list',$data);
+            $this->load->view('footer');
+        }
+        //修改主机
+        public function edit($type,$id){
+			$data['title'] = '主机修改';
+			@$id = (int)$id;
+			//加载数据库类
+			$this->load->database();
+			$sql = "SELECT * FROM '$type' WHERE id = $id";
+			$query = $this->db->query($sql);
+
+            $data['info'] = $query->result();
+
+            $data['type'] = $type;
+            $data['id']	=	$id;
+            //var_dump($data['info']);
+	        //加载视图
+            $this->load->view('header',$data);
+            $this->load->view('leftmenu');
+            $this->load->view('edit',$data);
             $this->load->view('footer');
         }
     }

@@ -206,6 +206,47 @@
             $note = $query->result();
             echo $note[0]->note;
         }
+        //更新数据
+        public function uphost($type,$id){
+	        @$id = (int)$id;
+	        //获取主机并验证
+            $domain = $this->input->post('domain',TRUE);
+            $domain = check_host($domain);
+            //获取IP并验证
+            $ip = $this->input->post('ip',TRUE);
+            $ip = check_ip($ip);
+            
+
+            //获取备注
+            $note = $this->input->post('note',TRUE);
+
+            $time = date('Y-m-d',time());
+
+            //加载数据库类
+            $this->load->database();
+            //验证主机名
+            //$this->checkhost($domain,$type);
+            $data = array(
+                'ip'        =>  $ip,
+                'domain'    =>  $domain,
+                'note'      =>  $note,
+                'time'      =>  $time
+            );
+
+            //插入数据
+            $sql = $this->db->update_string($type, $data,"id = $id");
+            $insert = $this->db->query($sql);
+
+            //如果数据插入成功
+            if($insert){
+                echo '更新成功！';
+                $this->writeconf($type);
+            }
+            else{
+                echo '写入失败！';
+                exit;
+            }
+        }
     }
     
 ?>
