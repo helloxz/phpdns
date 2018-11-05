@@ -48,7 +48,7 @@
             check_host("dsds.sdsd.com4");
         }
         //列出所有记录
-        public function list($type,$page = 0){
+        public function listrecord($type,$page = 0){
             
             @$page = (int)$page;
             if((!isset($page)) || ($page == '')) {

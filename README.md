@@ -29,9 +29,9 @@ DNSmasq是一个小巧且方便地用于配置DNS和DHCP的工具，适用于小
 请参考帮助文档： [https://doc.xiaoz.me/docs/phpdns/](https://doc.xiaoz.me/docs/phpdns/)
 
 ### 获取捐赠版
-PHPDNS捐赠版功能上没有任何区别，PHPDNS捐赠版可提供首次安装调试。
+* PHPDNS捐赠版功能上没有任何区别，PHPDNS捐赠版可提供首次安装调试。
+* 捐赠地址：[https://dwz.ovh/phpdns](https://dwz.ovh/phpdns)
 
-![](https://imgurl.org/upload/1712/cb349aa4a1b95997.png)
 
 ### 联系我
 * Blog:[https://www.xiaoz.me/](https://www.xiaoz.me/)

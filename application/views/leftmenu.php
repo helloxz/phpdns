@@ -19,8 +19,8 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a href="javascript:;">hosts列表</a>
                     <dl class="layui-nav-child">
-                    <dd><a href="/admin/list/hosts/0">主机列表</a></dd>
-                    <dd><a href="/admin/list/adblock/0">广告列表</a></dd>
+                    <dd><a href="/admin/listrecord/hosts/0">主机列表</a></dd>
+                    <dd><a href="/admin/listrecord/adblock/0">广告列表</a></dd>
                     </dl>
                 </li>
                 <!-- <li class="layui-nav-item layui-nav-itemed">
